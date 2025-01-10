@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { UsualModules } from '../app.config';
+import { ModulesToImport } from '../app.config';
 import { Subject, SubscriptionLike, debounceTime } from 'rxjs';
 
 @Component({
   selector: 'app-debounce',
-  imports: [...UsualModules],
+  imports: [...ModulesToImport],
   templateUrl: './debounce.component.html',
   styleUrl: './debounce.component.scss'
 })

@@ -1,9 +1,9 @@
 import { Component, DoCheck } from '@angular/core';
-import { UsualModules } from '../app.config';
+import { ModulesToImport } from '../app.config';
 
 @Component({
   selector: 'app-event',
-  imports: [...UsualModules],
+  imports: [...ModulesToImport],
   templateUrl: './event.component.html',
   styleUrl: './event.component.scss'
 })

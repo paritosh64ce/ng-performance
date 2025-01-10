@@ -1,6 +1,7 @@
-<p>debounce works!</p>
-
 <mat-card>
+    <p>debounce works!</p>
     <label>Search text: </label>
-    <input matInput [ngModel]="textValue" (ngModelChange)="onChange1($event)" />
+    <mat-form-field>
+        <input matInput [ngModel]="textValue" (ngModelChange)="onChange1($event)" />
+    </mat-form-field>
 </mat-card>

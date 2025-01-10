@@ -1,6 +1,8 @@
-<p>debounce works!</p>
+<mat-card>
+    <p>event works!</p>
 
-<p>
-    <input type="text" matInput [(ngModel)]="myText" />
-    <button mat-button (click)="clickMe()">Click me!</button>
-</p>
+    <mat-form-field>
+        <input type="text" matInput [(ngModel)]="myText" />
+    </mat-form-field>
+    <button mat-raised-button (click)="clickMe()">Click me!</button>
+</mat-card>

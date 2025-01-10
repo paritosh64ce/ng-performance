@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { ScrollingModule } from '@angular/cdk/scrolling';
-import { UsualModules } from '../app.config';
+import { ModulesToImport } from '../app.config';
 
 @Component({
   selector: 'app-with-cdk',
-  imports: [...UsualModules, ScrollingModule],
+  imports: [...ModulesToImport, ScrollingModule],
   templateUrl: './with-cdk.component.html',
   styleUrl: './with-cdk.component.scss'
 })

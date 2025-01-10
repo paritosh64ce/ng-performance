@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { UsualModules } from '../app.config';
+import { ModulesToImport } from '../app.config';
 
 @Component({
   selector: 'app-wo-cdk',
-  imports: [...UsualModules],
+  imports: [...ModulesToImport],
   templateUrl: './wo-cdk.component.html',
   styleUrl: './wo-cdk.component.scss'
 })

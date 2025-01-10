@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
 import { rxjsPubSub } from '@pscoped/rxjs-pub-sub';
 
 @Component({
   selector: 'app-repeat-child1',
-  imports: [],
+  imports: [MatButtonModule],
   templateUrl: './repeat-child1.component.html',
   styleUrl: './repeat-child1.component.scss'
 })

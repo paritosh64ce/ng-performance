@@ -7,8 +7,6 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 ## TODO
 
 1. CDK example - div height and its container height issue
-1. Material theme issue and material components look-n-feel (tab, input, button, etc)
-1. Use `mat-card` wherever avoided earlier
 1. Lazy modules example
 1. Console error
    > SyntaxError: Unexpected token 'H', "Hello, ng-"... is not valid JSON

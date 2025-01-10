@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { MatTabsModule } from '@angular/material/tabs';
 import { RepeatChild1Component } from "../repeat-child1/repeat-child1.component";
 import { RepeatChild2Component } from '../repeat-child2/repeat-child2.component';
-import { UsualModules } from '../app.config';
+import { ModulesToImport } from '../app.config';
 
 @Component({
   selector: 'app-repeate-obs',
   imports: [
-    ...UsualModules,
+    ...ModulesToImport,
     RepeatChild1Component, RepeatChild2Component,
     MatTabsModule
   ],
