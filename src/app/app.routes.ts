@@ -6,19 +6,12 @@ import { RepeateObsComponent } from './repeate-obs/repeate-obs.component';
 import { DebounceComponent } from './debounce/debounce.component';
 
 
-/*
-{ title: 'w/o CDK Scroll', link: 'wo-cdk' },
-    { title: 'w/ CDK Scroll', link: 'with-cdk' },
-    { title: 'Debounce', link: 'debounce' },
-    { title: 'Repeating observables', link: 'repeate-obs' },
-    { title: 'Lazy', link: 'lazy' },
-    { title: 'Lazy 2', link: 'lazy2' },
-    { title: 'Lifecycle Event', link: 'event' },
-*/
 export const routes: Routes = [
     { path: 'event', component: EventComponent },
     { path: 'wo-cdk', component: WoCdkComponent },
     { path: 'with-cdk', component: WithCdkComponent },
     { path: 'repeate-obs', component: RepeateObsComponent },
     { path: 'debounce', component: DebounceComponent },
+    { path: 'lazy', loadChildren: () => import('./lazy/lazy.module').then(m => m.LazyModule) },
+    { path: 'lazy2', loadChildren: () => import('./lazy2/lazy2.module').then(m => m.Lazy2Module) }
 ];

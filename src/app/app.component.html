@@ -242,8 +242,7 @@
         @for (item of navItems; track item.title) {
           <a
             class="pill"
-            [href]="item.link"
-            rel="noopener"
+            [routerLink]="item.link"
           >
             <span>{{ item.title }}</span>
             <svg

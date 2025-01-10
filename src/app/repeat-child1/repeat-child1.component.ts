@@ -22,7 +22,7 @@ export class RepeatChild1Component {
 
   publishEvent () {
     this.counter++;
-    rxjsPubSub.publishEvent(`COUNT_UPDATED_${this.index}`, this.counter);
+    rxjsPubSub.publishEvent(`COUNT_UPDATED`, this.counter);
   }
 
 }

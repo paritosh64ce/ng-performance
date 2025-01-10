@@ -17,7 +17,7 @@ export class RepeatChild2Component {
   constructor() { }
 
   ngOnInit() {
-    rxjsPubSub.subscribe(`COUNT_UPDATED_${this.index}`, data => {
+    rxjsPubSub.subscribe(`COUNT_UPDATED`, data => {
       this.counter = data;
     });
   }
