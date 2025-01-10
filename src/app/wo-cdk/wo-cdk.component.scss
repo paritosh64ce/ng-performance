@@ -1,0 +1,19 @@
+.example-viewport {
+    height: 400px;
+    width: 200px;
+    border: 1px solid black;
+    overflow-y: auto;
+}
+
+.example-item-detail {
+    height: 18px;
+}
+
+.example-alternate {
+    background: rgba(127, 127, 127, 0.3);
+}
+
+.item {
+    padding: 5px;
+    padding-left: 10px;
+}

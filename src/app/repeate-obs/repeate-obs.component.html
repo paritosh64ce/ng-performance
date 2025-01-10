@@ -1,0 +1,18 @@
+<p>repeate-obs works!</p>
+
+<div fxLayout="column">
+
+    <div>
+        <button mat-button fisStyle (click)="addTab()">Click To Add One More Tab</button>
+    </div>
+
+    <div fxFlex="100%">
+        <mat-tab-group>
+            <mat-tab *ngFor="let myTab of myTabs" label="{{myTab.label}}">
+                Content 
+                <app-repeat-child1 [index]="myTab.index"></app-repeat-child1>
+                <app-repeat-child2 [index]="myTab.index"></app-repeat-child2>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+</div>
