@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
+  standalone: true,
   selector: 'app-root',
   imports: [RouterLink, RouterOutlet, CommonModule],
   templateUrl: './app.component.html',
@@ -11,6 +12,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'ng-performance';
   navItems = [
+    { title: 'Home', link: '' },
     { title: 'w/o CDK Scroll', link: 'wo-cdk' },
     { title: 'w/ CDK Scroll', link: 'with-cdk' },
     { title: 'Debounce', link: 'debounce' },
@@ -18,5 +20,6 @@ export class AppComponent {
     { title: 'Lazy', link: 'lazy' },
     { title: 'Lazy 2', link: 'lazy2' },
     { title: 'Lifecycle Event', link: 'event' },
+    { title: 'Memory Leak', link: 'mem-leak' }
   ];
 }

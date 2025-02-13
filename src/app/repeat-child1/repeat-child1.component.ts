@@ -5,8 +5,7 @@ import { rxjsPubSub } from '@pscoped/rxjs-pub-sub';
 @Component({
   selector: 'app-repeat-child1',
   imports: [MatButtonModule],
-  templateUrl: './repeat-child1.component.html',
-  styleUrl: './repeat-child1.component.scss'
+  templateUrl: './repeat-child1.component.html'
 })
 export class RepeatChild1Component {
 

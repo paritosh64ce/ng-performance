@@ -6,8 +6,7 @@ import { ModulesToImport } from '../app.config';
 @Component({
   selector: 'app-repeat-child2',
   imports: [...ModulesToImport],
-  templateUrl: './repeat-child2.component.html',
-  styleUrl: './repeat-child2.component.scss'
+  templateUrl: './repeat-child2.component.html'
 })
 export class RepeatChild2Component {
 

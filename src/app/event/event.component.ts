@@ -4,8 +4,7 @@ import { ModulesToImport } from '../app.config';
 @Component({
   selector: 'app-event',
   imports: [...ModulesToImport],
-  templateUrl: './event.component.html',
-  styleUrl: './event.component.scss'
+  templateUrl: './event.component.html'
 })
 export class EventComponent implements DoCheck {
   myText: string = '';

@@ -11,8 +11,7 @@ import { ModulesToImport } from '../app.config';
     RepeatChild1Component, RepeatChild2Component,
     MatTabsModule
   ],
-  templateUrl: './repeate-obs.component.html',
-  styleUrl: './repeate-obs.component.scss'
+  templateUrl: './repeate-obs.component.html'
 })
 export class RepeateObsComponent {
 
