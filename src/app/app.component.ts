@@ -5,7 +5,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 @Component({
   standalone: true,
   selector: 'app-root',
-  imports: [RouterLink, RouterOutlet, CommonModule],
+  imports: [CommonModule, RouterLink, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -13,6 +13,7 @@ export class AppComponent {
   title = 'ng-performance';
   navItems = [
     { title: 'Home', link: '' },
+    { title: 'Caching', link: 'caching' },
     { title: 'w/o CDK Scroll', link: 'wo-cdk' },
     { title: 'w/ CDK Scroll', link: 'with-cdk' },
     { title: 'Debounce', link: 'debounce' },

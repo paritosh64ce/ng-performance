@@ -5,6 +5,7 @@ import { WithCdkComponent } from './with-cdk/with-cdk.component';
 import { RepeateObsComponent } from './repeate-obs/repeate-obs.component';
 import { DebounceComponent } from './debounce/debounce.component';
 import { MemoryLeakComponent } from './memory-leak/memory-leak.component';
+import { CachingComponent } from './caching/caching.component';
 
 
 export const routes: Routes = [
@@ -14,6 +15,7 @@ export const routes: Routes = [
     { path: 'repeate-obs', component: RepeateObsComponent },
     { path: 'debounce', component: DebounceComponent },
     { path: 'mem-leak', component: MemoryLeakComponent },
+    { path: 'caching', component: CachingComponent },
     { path: 'lazy', loadChildren: () => import('./lazy/lazy.module').then(m => m.LazyModule) },
     { path: 'lazy2', loadChildren: () => import('./lazy2/lazy2.module').then(m => m.Lazy2Module) }
 ];
